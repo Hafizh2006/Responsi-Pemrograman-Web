@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+        <div class="login-box">
+            <div class="form">
+                <h1>LOGIN ADMIN</h1>
+                <form action="<?php echo BASE_URL?>/admin/cekLogin" method="POST" id="formdaftar">
+                    <input type="email" placeholder="Masukkan email" name="akun" id = "akun" required><br><br>
+                    <input type="password" placeholder="Masukkan password" name="password" id = "password" required><br><br>
+                    <input type="password" placeholder="Konfirmasi password" name="konfirmasiPassword" id = "konfirmasiPassword"><br><br>
+                    <input type="date" placeholder="Masukkan tanggal lahir" name="tanggalLahir" id = "tanggalLahir"><br>
+                    <input type="checkbox" name="persetujuan" id = "persetujuan>
+                    <label for="">Saya menyetujui semua syarat, ketentuan dan privasi yang berlaku</label><br><br>
+                <button type = "submit" name = "loginAdmin" class = "tombol">Masuk</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
